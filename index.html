@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Word Finder!</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <h3>Important Notes:</h3>
+    <ul>
+      <li>If an attribute (such as length) is unknown, just empty it!</li>
+      <li>Every time you make a new search, the data will be combined. For instance: <br>If you search letter a at position 1, then search letter b at position 2...<br>The results will be the letters that start with a and has second letter b!</li>
+      <li>All the words are taken from <a href="http://www.mieliestronk.com/corncob_lowercase.txt" target="_blank">here!</a> (however, I added a and i in lowercase since they weren't in the list!</li>
+      <li>Well, go ahead and search!</li>
+    </ul>
+    <label>Length: </label>
+    <input type="number" id="length" placeholder="e.g. 6 (that means there are 6 letters in the word)"/><br>
+    <label>Letter position: </label>
+    <input type="number" id="position" placeholder="e.g. 4 (that means the fourth letter of the word)"/><br>
+    <label>Letter: </label>
+    <input type="text" maxlength="1" id="letter" placeholder="e.g. n (so the fourth letter of the word is n)" style="text-transform:lowercase;"/><br>
+    <input type="submit" value="Search" onclick="search();"/>
+    <p id="words"></p>
+  </body>
+</html>
